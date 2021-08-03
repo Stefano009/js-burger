@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*common */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Georama', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header,
+main {
+    width: calc(100%/2);    
+    margin: 0 auto; 
+}
+.container-fluid {
+    width: 100%;
+    height: 100%;
+}
+.p-main-top {
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+.container-fluid input {
+    padding-left: 3rem;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-inner {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding-top: 1rem;
+}
+.col-6 {
+    width: calc((100% / 12) * 6);
+    display: flex;
+    align-items: flex-start;
+
+}
+.red {
+    color: rgba(249,62,98,255);
+}
+/* /common */
+/*header*/
+.containerHeader {
+    height: 100px;
+    display: flex;
+    align-items: end;
+    padding: 1rem;
+    background-color: rgba(253,187,64,255);
+    text-transform: capitalize;
+    position: relative;
+}
+.top-position {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(45%, 40%) scale(0.8);
+}
+/* /header */
+/* main section top*/
+.burger_input {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    width: 100%;
+}
+/* col-6 resize */
+.col-6 svg {
+    width: 30px;
+}
+.col-6 p {
+    padding: 0.3rem 0.5rem;
+}
+/*column alignment if needed*/
+/* .col-4 {
+    width: calc((25vw / 3) - 0.2rem);
+    text-align: start;
+} */
+.d-flex {
+    display: flex;
+}
+.btn_check {
+    background-color: rgba(211,51,89,255);
+    width: 1rem;
+    height: 1rem;
+    margin: 0.4rem;
+}
+/* /main section top*/
+/*coupon section*/
+.coupon {
+    padding-top: 2rem;
+}
+#coupon {
+    margin: 0 1rem;
+    padding: 0.3rem 1rem;
+    background-color: rgba(253,187,64,0.5);
+    border: none;
+    width: 60%;
+    border-radius: 0.3rem;
+    font-weight: 550;
+}
+.btn-calculate-price {
+    background-color: rgba(253,187,64,1);
+    margin: 1.5rem auto;
+    width: 20%;
+    font-size: 600;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+/* /coupon section*/
+/* bottom */
+footer {
+    width: 50%;
+    margin: 0 auto;
+    height: 60px;
+    background-color: rgba(211,51,89,255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+/* /bottom */
+/* inserire una media query sotto gli 800px*/
+@media (max-width: 870px) {
+    header,
+    main,
+    footer {
+    width: 100%; 
+}
+}
