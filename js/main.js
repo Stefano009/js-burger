@@ -30,7 +30,7 @@ var calculate = document.getElementById('calculate').addEventListener('click',
             return document.getElementById('nameMyBurger').innerHTML = 'Create Your Burger', alert('inserisci un nome per il tuo hamburger'), document.getElementById('price').innerHTML = '$ ' + 50;
         if(coupons.includes(coupon) === true) {
             price = (price * couponDiscount).toFixed(2);
-            coupons.splice(coupon.indexOf(coupon), 1);
+            coupons = coupons.filter(e => e !== coupon)
         }
         else
             alert('il suo coupon non è valido, il prezzo sarà calcolato normalmente')
@@ -38,10 +38,6 @@ var calculate = document.getElementById('calculate').addEventListener('click',
         document.getElementById('nameMyBurger').innerHTML = burgerName;//posiziono nome hamburger nel titolo
         console.log(coupons); //coupon rimanenti
         price = 50; //reset del prezzo
-
-
-
     }
 )
-
 //functions
