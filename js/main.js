@@ -40,4 +40,23 @@ var calculate = document.getElementById('calculate').addEventListener('click',
         price = 50; //reset del prezzo
     }
 )
-//functions
+// let cheese = document.getElementById('checkbox-cheese').checked;
+// let tomato = document.getElementById('checkbox-tomato').checked;
+// let egg = document.getElementById('checkbox-egg').checked;
+// let lettuce = document.getElementById('checkbox-lettuce').checked;
+// let mustard = document.getElementById('checkbox-mustard').checked;
+// let ketchup = document.getElementById('checkbox-ketchup').checked;
+// let element = document.getElementsByClassName('fa-check-square');
+
+// if(cheese === true)
+//    element.classList.add("z-index-max");
+// if(tomato === true)
+// element.classList.add("z-index-max");
+// if(egg === true)
+// element.classList.add("z-index-max");
+// if(lettuce === true)
+// element.classList.add("z-index-max");
+// if(mustard === true)
+// element.classList.add("z-index-max");
+// if(ketchup === true)
+   
